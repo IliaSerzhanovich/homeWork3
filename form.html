@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms. Homework3</title>
+    <meta name="description" content="Страница с формами.Домашнее задание 3.">
+</head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Форма обратной связи</legend>
+                
+                <label for="surname">Ваша фамилия</label>
+                <input type="text" id="surname">
+
+                <br>
+                <br>
+
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name">
+
+                <br>
+                <br>
+
+                <label for="tel">Мобильный телефон</label>
+                <input type="tel" id="tel" value="+375" >
+
+                <br>
+                <br>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+
+                <br>
+                <br>
+
+                <label for="confirm-email">Confirm E-mail</label>
+                <input type="email" id="confirm-email">
+
+                <br>
+                <br>
+
+                <label for="team">Тема обращения</label>
+                <select name="team" id="team">
+                    <option selected value="Выберите тему обращения" disabled>Выберите тему обращения</option>
+                    <option value="rename data">Изменить данные в личном кабинете</option>
+                    <option value="can not open">Не могу войти в личный кабинет</option>
+                    <option value="another team">Другая тема обращения</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="message">Сообщение:</label>
+
+                <br>
+                <br>
+
+                <textarea id="message" rows="20" cols="100" placeholder="Введите текст вашего сообщения..." autofocus></textarea>
+                <br>
+                <br>
+
+                <input type="file" multiple>
+                <br>
+                <br>
+
+                <input type="checkbox" id="rules" checked>
+                <label for="rules">Вы соглашаетесь с тем, чтобы мы обрабатывали Ваши данные для предоставления Вам обратной связи.</label>
+
+                <br>
+                <br>
+            
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
+  
